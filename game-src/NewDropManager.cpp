@@ -19,9 +19,9 @@ auto CNewDropManager::Initialize() -> void {
         return;
     }
     MYSQL_ROW row;
-    tDropInfo   info;
     d_vec.reserve(pMsg->Get()->uiNumRows);
     while (nullptr != (row = mysql_fetch_row(pMsg->Get()->pSQLResult))) {
+        tDropInfo   info{};
         WORD col = 0;
         info.qfName = qf_ + row[col++];
         str_to_number(info.dwMobVnum, row[col++]);
