@@ -1,0 +1,1 @@
+#define NEW_DROP_MANAGER

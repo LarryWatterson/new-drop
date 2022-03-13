@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `newdrop_info`;
+CREATE TABLE `newdrop_info` (
+  `qf_name` varchar(25) NOT NULL,
+  `mob_vnum` int(11) UNSIGNED NOT NULL DEFAULT '0',
+  `kill_count` smallint(11) UNSIGNED NOT NULL DEFAULT '0',
+  `item_vnum` int(11) UNSIGNED NOT NULL DEFAULT '0',
+  `item_count` int(11) UNSIGNED NOT NULL DEFAULT '0',
+  PRIMARY KEY (`qf_name`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5;
